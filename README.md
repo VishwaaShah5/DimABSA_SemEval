@@ -2,7 +2,7 @@
 
 This repository contains the code and experiments for our submission to the **SemEval Dimensional Aspect-Based Sentiment Analysis (DimABSA) Track A**.
 
-We explore **Valence–Arousal (VA) prediction** using both:
+We explore **Valence–Arousal (VA) prediction** using:
 - In-Context Learning (ICL) with large language models
 - Fine-tuned transformer-based models
 - A hybrid ensemble of both approaches
@@ -11,7 +11,7 @@ We explore **Valence–Arousal (VA) prediction** using both:
 
 ## Repository Contents
 
-This repository includes **7 model implementations**:
+This repository includes **6 model implementations**:
 
 ### In-Context Learning (ICL)
 - `ICL-FS.ipynb` – Standard few-shot prompting
@@ -19,6 +19,7 @@ This repository includes **7 model implementations**:
 - `ICL-FS-RDoC.ipynb` – Few-shot with RDoC-inspired affective signals
 
 ### Fine-Tuned Models (FT)
+- `FT-RDoC-Setup.ipynb` – Feature engineering for RDoC-based signals used across fine-tuned models
 - `FT-ST-RDoC.ipynb` – Single-task RoBERTa regression with RDoC features
 - `FT-MT-RDoC.ipynb` – Multi-task RoBERTa model with auxiliary RDoC objective
 
